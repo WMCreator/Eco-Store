@@ -1,0 +1,137 @@
+$primary-color:#FFEFE7;
+$secundary-color:#FFDAC6;
+$tertiary-color:#BABD8D;
+$primary-text-color:#7C6A0A;
+$orange: #FA9500;
+$font-stackl: 'IBM Plex Sans', sans-serif; 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: $font-stackl;
+    background-color: $primary-color;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100vw;
+}
+
+.header {
+    width: 100%;
+    padding: 20px 30px;
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+            font-size: 1.4rem;
+            color: $primary-text-color;
+        }
+
+        &__desktop {
+            display: none;
+        }
+
+        &__icon img {
+            width: 45px;
+            height: 45px;
+        }
+    }
+}
+
+.main {
+
+    .eco_impact {
+        width: 100%;
+        height: 90vh;
+        padding: 0 25px;
+        
+        &__img {
+            width: 100%;
+            height: 45vh;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 10px;
+        }
+
+        &__title {
+            margin-top: 35px;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            color: $primary-text-color;
+        }
+
+        &__text {
+            font-size: 0.8rem;
+            line-height: 1.2rem;
+            color: $primary-text-color;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        &__button {
+            margin-top: 30px;
+            padding: 15px 35px;
+            align-self: center;
+            font-weight: 500;
+            border: none;
+            border-radius: 25px;
+            background-color: $orange;
+            color: white;
+        }
+    }
+
+    .products_container {
+        section {
+            h2 {
+
+            }
+
+            .cards_container {
+                display: flex;
+                overflow-x: scroll;
+                overscroll-behavior-x: contain;
+                scroll-snap-type: proximity;
+                
+                .default_card {
+                    display: flex;
+                    flex-direction: column;
+                    scroll-snap-align: center;
+                    width: 250px;
+                    height: 300px;
+                    
+                    &_icon {
+                        width: 35px;
+                        height: 35px;
+                    }
+                    
+                    &_img {
+
+                    }
+                }
+            }
+        }
+
+        .skincare {
+
+        }
+
+        .furniture {
+            
+        }
+    }
+}
