@@ -26,7 +26,7 @@ img {
 }
 
 .header {
-    width: 100%;
+    width: 100vw;
     padding: 20px 30px;
 
     .navbar {
@@ -54,7 +54,6 @@ img {
 
     .eco_impact {
         width: 100%;
-        height: 90vh;
         padding: 0 25px;
         
         &__img {
@@ -96,42 +95,90 @@ img {
     }
 
     .products_container {
+        padding: 0 0 0 25px;
+        
         section {
             h2 {
-
+                margin: 25px 0;
+                font-size: 1.2rem;
+                font-weight: normal;
             }
 
             .cards_container {
+                min-width: 30px;
+                max-width: 1300px;
+                max-height: 630px;
+                margin-bottom: 50px;
                 display: flex;
+                gap: 15px;
                 overflow-x: scroll;
                 overscroll-behavior-x: contain;
                 scroll-snap-type: proximity;
                 
                 .default_card {
+                    position: relative;
+                    width: 100%;
+                    padding: 20px 20px 10px 25px;
+                    height: 25vh;
+                    min-width: 180px;
+                    min-height: 275px;
+                    max-height: 350px;
                     display: flex;
                     flex-direction: column;
-                    scroll-snap-align: center;
-                    width: 250px;
-                    height: 300px;
-                    
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    border-radius: 8px;
+                    background-color: white;
+
+                    &_info {
+                        h3 {
+                            font-size: 0.9rem;
+                        }
+
+                        p {
+                            font-size: 0.6rem;
+                            margin: 5px 0;
+                        }
+                    }
+
                     &_icon {
-                        width: 35px;
-                        height: 35px;
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        width: 10%;
                     }
                     
                     &_img {
-
+                        width: 100%;
+                        height: 65%;
+                        border-radius: 5px;
+                        object-fit: cover;
                     }
                 }
             }
         }
 
         .skincare {
+            h2 {
+                margin-top: 50px;
+            }
 
+            .cards_container {
+                .skincare__card {
+                    background-color: $secundary-color;
+                    color: #7C6A0A;
+                }
+            }
         }
 
         .furniture {
-            
+            .cards_container {
+                .furniture__card {
+                    background-color: $tertiary-color;
+                    color: white;
+                }
+            }
         }
     }
 }

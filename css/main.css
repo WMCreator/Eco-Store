@@ -19,25 +19,21 @@ img {
 }
 
 .header {
-  width: 100%;
+  width: 100vw;
   padding: 20px 30px;
 }
-
 .header .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .header .navbar p {
   font-size: 1.4rem;
   color: #7C6A0A;
 }
-
 .header .navbar__desktop {
   display: none;
 }
-
 .header .navbar__icon img {
   width: 45px;
   height: 45px;
@@ -45,10 +41,8 @@ img {
 
 .main .eco_impact {
   width: 100%;
-  height: 90vh;
   padding: 0 25px;
 }
-
 .main .eco_impact__img {
   width: 100%;
   height: 45vh;
@@ -58,25 +52,21 @@ img {
      object-position: center;
   border-radius: 10px;
 }
-
 .main .eco_impact__title {
   margin-top: 35px;
   margin-bottom: 20px;
   font-size: 1.8rem;
   color: #7C6A0A;
 }
-
 .main .eco_impact__text {
   font-size: 0.8rem;
   line-height: 1.2rem;
   color: #7C6A0A;
 }
-
 .main .eco_impact div {
   display: flex;
   flex-direction: column;
 }
-
 .main .eco_impact__button {
   margin-top: 30px;
   padding: 15px 35px;
@@ -87,23 +77,69 @@ img {
   background-color: #FA9500;
   color: white;
 }
-
+.main .products_container {
+  padding: 0 0 0 25px;
+}
+.main .products_container section h2 {
+  margin: 25px 0;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
 .main .products_container section .cards_container {
+  min-width: 30px;
+  max-width: 1300px;
+  max-height: 630px;
+  margin-bottom: 50px;
   display: flex;
+  gap: 15px;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: proximity;
 }
-
 .main .products_container section .cards_container .default_card {
+  position: relative;
+  width: 100%;
+  padding: 20px 20px 10px 25px;
+  height: 25vh;
+  min-width: 180px;
+  min-height: 275px;
+  max-height: 350px;
   display: flex;
   flex-direction: column;
-  scroll-snap-align: center;
-  width: 250px;
-  height: 300px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 8px;
+  background-color: white;
 }
-
+.main .products_container section .cards_container .default_card_info h3 {
+  font-size: 0.9rem;
+}
+.main .products_container section .cards_container .default_card_info p {
+  font-size: 0.6rem;
+  margin: 5px 0;
+}
 .main .products_container section .cards_container .default_card_icon {
-  width: 35px;
-  height: 35px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 10%;
+}
+.main .products_container section .cards_container .default_card_img {
+  width: 100%;
+  height: 65%;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .products_container .skincare h2 {
+  margin-top: 50px;
+}
+.main .products_container .skincare .cards_container .skincare__card {
+  background-color: #FFDAC6;
+  color: #7C6A0A;
+}
+.main .products_container .furniture .cards_container .furniture__card {
+  background-color: #BABD8D;
+  color: white;
 }/*# sourceMappingURL=main.css.map */
