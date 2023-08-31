@@ -1,0 +1,58 @@
+.header .navbar {
+    &__desktop {
+        display: flex;
+        gap: 1.2rem;
+    }
+
+    &__mobile_menu {
+        display: none;
+    }
+}
+
+.main {
+    .products_container {
+        padding: 0 1.5rem;
+        
+        .cards_container {
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            overflow-x: none;
+            overscroll-behavior-x: none;
+
+            .default_card {
+                width: 50%;
+                margin-top: 1.875rem;
+                &_icon {
+                    top: 15px;
+                }
+                &_img {
+                    height: 70%;
+                }
+            }
+        }
+    }
+    
+    .about_us {
+        div {
+            flex-direction: row;
+            gap: 2rem;
+            
+            article {
+                width: 100%;
+                flex-direction: row;
+                justify-content: center;
+                text-align: start;
+            }
+        }
+    }
+
+    &__find_us {
+        img {
+            max-height: 31.25rem;
+        }
+    }
+}
+
+.footer__icons {
+    align-self: center;
+}

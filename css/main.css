@@ -5,7 +5,7 @@
 }
 
 body {
-  font-size: 62.5%;
+  font-size: 100%;
   font-family: "IBM Plex Sans", sans-serif;
   background-color: #FFEFE7;
 }
@@ -14,13 +14,8 @@ ul {
   list-style: none;
 }
 
-img {
-  width: 100vw;
-}
-
 .header {
-  width: 100vw;
-  padding: 20px 30px;
+  padding: 1.5rem 1.875rem 4rem 1.875rem;
 }
 .header .navbar {
   display: flex;
@@ -28,39 +23,57 @@ img {
   justify-content: space-between;
 }
 .header .navbar p {
-  font-size: 1.4rem;
+  font-size: 1.5em;
   color: #7C6A0A;
 }
 .header .navbar__desktop {
   display: none;
 }
 .header .navbar__icon img {
-  width: 45px;
-  height: 45px;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
+.main {
+  margin: 0 auto;
+}
+.main h2 {
+  color: #7C6A0A;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.main > section {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 0 1.7rem;
+  margin-bottom: 6rem;
+}
 .main .eco_impact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
-  padding: 0 25px;
 }
 .main .eco_impact__img {
+  margin: 0 auto;
   width: 100%;
-  height: 45vh;
+  height: 40%;
+  max-height: 25rem;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 .main .eco_impact__title {
-  margin-top: 35px;
-  margin-bottom: 20px;
-  font-size: 1.8rem;
+  margin-top: 3rem;
+  margin-bottom: 1.25rem;
+  font-size: 2em;
   color: #7C6A0A;
 }
 .main .eco_impact__text {
-  font-size: 0.8rem;
-  line-height: 1.2rem;
+  font-size: 1em;
+  line-height: 1.5em;
   color: #7C6A0A;
 }
 .main .eco_impact div {
@@ -68,30 +81,27 @@ img {
   flex-direction: column;
 }
 .main .eco_impact__button {
-  margin-top: 30px;
-  padding: 15px 35px;
+  margin-top: 1.875rem;
+  padding: 0.9375rem 2.1875rem;
   align-self: center;
-  font-weight: 500;
+  font-size: 1em;
+  font-weight: bold;
   border: none;
-  border-radius: 25px;
+  border-radius: 1.5625rem;
   background-color: #FA9500;
   color: white;
 }
 .main .products_container {
-  padding: 0 0 0 25px;
+  padding: 0 0 0 1.5rem;
 }
 .main .products_container section h2 {
-  margin: 25px 0;
-  font-size: 1.2rem;
-  font-weight: normal;
+  margin: 1.5625rem 0;
 }
 .main .products_container section .cards_container {
-  min-width: 30px;
-  max-width: 1300px;
-  max-height: 630px;
-  margin-bottom: 50px;
+  min-width: 1.875rem;
+  margin-bottom: 3.125rem;
   display: flex;
-  gap: 15px;
+  gap: 2rem;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: proximity;
@@ -99,47 +109,153 @@ img {
 .main .products_container section .cards_container .default_card {
   position: relative;
   width: 100%;
-  padding: 20px 20px 10px 25px;
-  height: 25vh;
-  min-width: 180px;
-  min-height: 275px;
-  max-height: 350px;
+  padding: 1.5625rem 1.5625rem 4.375rem 1.5625rem;
+  min-width: 11.25rem;
+  min-height: 17.18rem;
+  max-width: 16.875rem;
+  max-height: 28.75rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
-  border-radius: 8px;
+  gap: 0.625rem;
+  border-radius: 0.5rem;
   background-color: white;
 }
 .main .products_container section .cards_container .default_card_info h3 {
-  font-size: 0.9rem;
+  font-size: 1.4em;
 }
 .main .products_container section .cards_container .default_card_info p {
-  font-size: 0.6rem;
-  margin: 5px 0;
+  font-size: 1em;
+  margin: 0.3125rem 0;
 }
 .main .products_container section .cards_container .default_card_icon {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 10%;
+  align-self: end;
+  margin-top: -0.625rem;
+  margin-right: -0.9rem;
+  width: 1.875rem;
 }
 .main .products_container section .cards_container .default_card_img {
   width: 100%;
-  height: 65%;
-  border-radius: 5px;
+  height: 70%;
+  border-radius: 0.625rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.main .products_container .skincare h2 {
-  margin-top: 50px;
+.main .products_container .healthcare h2 {
+  margin-top: 3.125rem;
 }
-.main .products_container .skincare .cards_container .skincare__card {
+.main .products_container .healthcare .cards_container .healthcare__card {
   background-color: #FFDAC6;
   color: #7C6A0A;
 }
 .main .products_container .furniture .cards_container .furniture__card {
   background-color: #BABD8D;
   color: white;
+}
+.main .about_us {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.main .about_us div {
+  width: 100%;
+  margin: 1.875rem 0;
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.125rem;
+}
+.main .about_us article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  text-align: center;
+}
+.main .about_us article img {
+  width: 6.25rem;
+  height: 6.25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .about_us article p {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #E86424;
+}
+.main__gallery {
+  width: 100vw;
+}
+.main__gallery div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2.5rem;
+  gap: 1.875rem;
+}
+.main__gallery div img {
+  width: 100%;
+  max-height: 21.875rem;
+  border-radius: 0.625rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.main__find_us {
+  width: 100%;
+}
+.main__find_us p {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+.main__find_us p span:nth-child(1) {
+  font-size: 2.1em;
+  font-weight: 500;
+  color: #FA9500;
+}
+.main__find_us p span:nth-child(2) {
+  font-size: 1.4em;
+  font-weight: 300;
+  color: #FA9500;
+}
+.main__find_us img {
+  width: 100%;
+  height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 2.5rem;
+}
+
+.footer {
+  padding: 2.5rem 3.125rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
+  background-color: #FA9500;
+}
+.footer__links {
+  color: white;
+  gap: 1.875rem;
+}
+.footer__links h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+}
+.footer__links p {
+  margin: 1.25rem 0;
+}
+.footer__icons {
+  display: flex;
+  align-self: end;
+  gap: 0.9375rem;
+}
+.footer__icons li a img {
+  width: 2.1875rem;
+  height: 2.1875rem;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,17 @@
+.main .eco_impact {
+  flex-direction: row-reverse;
+  gap: 6rem;
+}
+.main .eco_impact div, .main .eco_impact img {
+  width: 50%;
+}
+.main .eco_impact__button {
+  margin-top: 4rem;
+  align-self: start;
+}
+.main .about_us div {
+  gap: 6.25rem;
+}
+.main__gallery div {
+  flex-direction: row;
+}/*# sourceMappingURL=desktop.css.map */

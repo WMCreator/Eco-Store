@@ -1,0 +1,25 @@
+.main {   
+    .eco_impact {
+        flex-direction: row-reverse;
+        gap: 6rem;
+
+        div, img {
+            width: 50%;
+        }
+
+        &__button {
+            margin-top: 4rem;
+            align-self: start;
+        }
+    }
+
+    .about_us div {
+        gap: 6.25rem;
+    }
+
+    &__gallery {
+        div {
+            flex-direction: row;
+        }
+    }
+}

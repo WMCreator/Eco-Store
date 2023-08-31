@@ -1,0 +1,44 @@
+.header .navbar__desktop {
+  display: flex;
+  gap: 1.2rem;
+}
+.header .navbar__mobile_menu {
+  display: none;
+}
+
+.main .products_container {
+  padding: 0 1.5rem;
+}
+.main .products_container .cards_container {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  overflow-x: none;
+  overscroll-behavior-x: none;
+}
+.main .products_container .cards_container .default_card {
+  width: 50%;
+  margin-top: 1.875rem;
+}
+.main .products_container .cards_container .default_card_icon {
+  top: 15px;
+}
+.main .products_container .cards_container .default_card_img {
+  height: 70%;
+}
+.main .about_us div {
+  flex-direction: row;
+  gap: 2rem;
+}
+.main .about_us div article {
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  text-align: start;
+}
+.main__find_us img {
+  max-height: 31.25rem;
+}
+
+.footer__icons {
+  align-self: center;
+}/*# sourceMappingURL=tablet.css.map */
