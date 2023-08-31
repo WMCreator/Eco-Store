@@ -6,23 +6,22 @@
   display: none;
 }
 
-.main .products_container {
+.main section .products_container {
   padding: 0 1.5rem;
 }
-.main .products_container .cards_container {
+.main section .products_container .cards_container {
   justify-content: space-evenly;
   flex-wrap: wrap;
-  overflow-x: none;
-  overscroll-behavior-x: none;
+  overflow-x: hidden;
 }
-.main .products_container .cards_container .default_card {
+.main section .products_container .cards_container .default_card {
   width: 50%;
   margin-top: 1.875rem;
 }
-.main .products_container .cards_container .default_card_icon {
+.main section .products_container .cards_container .default_card_icon {
   top: 15px;
 }
-.main .products_container .cards_container .default_card_img {
+.main section .products_container .cards_container .default_card_img {
   height: 70%;
 }
 .main .about_us div {
