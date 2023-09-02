@@ -13,22 +13,16 @@
     section .products_container {
         padding: 0 1.5rem;
         
-        .cards_container {
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            overflow-x: hidden;
-
-            .default_card {
-                width: 50%;
-                margin-top: 1.875rem;
-                
-                &_icon {
-                    top: 15px;
-                }
-                
-                &_img {
-                    height: 70%;
-                }
+        .cards_container .default_card  {
+            width: 50%;
+            margin-top: 1.875rem;
+            
+            &_icon {
+                top: 15px;
+            }
+            
+            &_img {
+                height: 70%;
             }
         }
     }

@@ -104,7 +104,6 @@ ul {
   gap: 2rem;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
-  scroll-snap-type: proximity;
 }
 .main .products_container section .cards_container .default_card {
   position: relative;
